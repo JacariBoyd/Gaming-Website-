@@ -32,12 +32,14 @@ html {
   width: 1000px;
 }
 
-.videowrapper iframe {
-  position: absolute;
-  left: centered;
-  top: 150px;
-  right: 75px;
-  bottom: 0px;
-  height: 50%;
-  width: 50%;
+.carousel-container {
+  width: 300%;
+  margin: auto;
+  border: 5px solid black;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100px;
+  height: 500px;
 }
