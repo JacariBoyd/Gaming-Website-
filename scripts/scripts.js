@@ -13,13 +13,31 @@ carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 //Button Listeners
 nextBtn.addEventListener("click", () => {
+  event.preventDefault();
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
-  //   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
-  console.log(counter);
+  carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
 
-Btn.addEventListener("click", () => {
+prevBtn.addEventListener("click", () => {
+  event.preventDefault();
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  counter++;
+  counter--;
+  carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
+
+// function handlenextlButton(evt) {
+//   setStatusMessage("next Button pressed!!...");
+//   navigator.mediaDevices
+//     .getUserInput
+//     .then((chatStream) => {
+//       selfViewElem.srcObject = chatStream;
+//       chatStream
+//         .getTracks()
+//         .forEach((track) => myPeerConnection.addTrack(track, chatStream));
+//       setStatusMessage("Connected");
+//     })
+//     .catch((err) => {
+//       setStatusMessage("Failed to connect");
+//     });
+// }
