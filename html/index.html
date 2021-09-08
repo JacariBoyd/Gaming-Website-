@@ -1,34 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
+    <script src="/scripts/scripts.js"></script>
     <title>teamlab</title>
-    
+   
 </head>
+</body>
 <body>
-  <img class="img-dbgt" src="/img/dbgt.jpg" alt="My dgbt">
-    <div class="wrapper">
-      <div class= "img-dbgt">
-        <h1>Gamers Raven Test</h1> 
-          <h1>Sample Slideshow</h1>
-          <div class="carousel-container">
-            <div class="carousel-slide">
-              <img src="/img/ricknmorty.jpg" id="lastClone" alt="stance 5">
-              <img src="/img/dbgt2.jpg" alt="stance 2">
-              <img src="/img/rez1.jpg" alt="stance 5">
-              <img src="/img/halo1.jpg" alt="stance 4">
-              <img src="/img/ricknmorty.jpg" id="firstClone" alt="stance 1">
+<h1>Gamer Raven</h1>
+<h2>test Slides</h2>
+          < class="slider">
+            <div class="slides">
+              <!---radio buttons start-->
+<input type="radio" name="radio-btn" id="radio1"> 
+<input type="radio" name="radio-btn" id="radio2"> 
+<input type="radio" name="radio-btn" id="radio3"> 
+<input type="radio" name="radio-btn" id="radio4"> 
+<input type="radio" name="radio-btn" id="radio5"> 
+
+              
+
+<div class="slide first">
+  <img src="/img/ricknmorty.jpg" id="lastClone" alt="stance 5">
+</div>
+<div class="slide">
+  <img src="/img/halo1.jpg" alt="stance 4">
+</div>
+<div class="slide">
+  <img src="/img/dbgt2.jpg" alt="stance 2">
+</div>
+<div class="slide">
+  <img src="/img/rez1.jpg" alt="stance 5">
+</div>
+<div class="slide">
+  <img src="/img/megaman.jpg" id="lastClone" alt="stance 5">
+</div>
+  <div class="navigation-auto">
+    <div class="auto-btn1"></div>
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn3"></div>
+  </div>
+
+        
+              <!-----------image buttons end------------------>
+              <!----------------slide image start-------------->
+
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+              </div>
+          
             </div>
 
-          <button id="prevBtn">Prev</button>
-          <button id="nextBtn">Next</button>
+            </div>
+</div>
+          <!-- <button id="prevBtn">Prev</button>
+          <button id="nextBtn">Next</button> -->
 
 
-          <script src="/scripts/scripts.js"></script>
+          
           </div>
           
         </div>
