@@ -25,6 +25,7 @@ h1 {
   width: 300%;
   height: 300px;
   display: flex;
+  overflow: hidden;
 }
 
 .slides input {
@@ -64,7 +65,7 @@ h1 {
 }
 
 .manual-btn-hover {
-  background: rgb(82, 34, 2);
+  background: rgb(122, 123, 206);
 }
 
 #radio1:checked ~ .first {
@@ -74,8 +75,12 @@ h1 {
   margin-left: -20%;
 }
 #radio3:checked ~ .first {
-  margin-left: -40;
+  margin-right: -0%;
 }
 #radio4:checked ~ .first {
-  margin-left: -60;
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -0%;
 }
