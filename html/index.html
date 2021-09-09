@@ -6,39 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
+
+    <script src="/scripts/scripts.js"></script>
     <title>teamlab</title>
-    <style><style>
-      video {
-        background: black;
-      }
-      </style>
+   
 </head>
+</body>
 <body>
-    <div class="wrapper">
-        <h1>Gamers Raven Test</h1>
+<h1>Gamer Raven</h1>
+<h2>test Slides</h2>
+         
+          <!-- <div class="slider"> -->
+            <div class="slides">
+           
+              <!---radio buttons start-->
+<input type="radio" name="radio-btn" id="radio1"> 
+<input type="radio" name="radio-btn" id="radio2"> 
+<input type="radio" name="radio-btn" id="radio3"> 
+<input type="radio" name="radio-btn" id="radio4"> 
+<input type="radio" name="radio-btn" id="radio5"> 
+              
 
-          <!----<img class="img-dbgt" src="/img/dbgt.jpg" alt="My dgbt">---->
-        <div class= "img-dbgt">
-          <h1>Sample Slideshow</h1>
-          <div class="carousel-container">
-            <div class="carousel-slide">
-              <img src="/img/ricknmorty.jpg" id="lastClone" alt="stance 5">
-              <img src="/img/dbgt2.jpg" alt="stance 2">
-              <img src="/img/rez1.jpg" alt="stance 5">
-              <img src="/img/halo1.jpg" alt="stance 4">
-              <img src="/img/ricknmorty.jpg" id="firstClone" alt="stance 5">
+<div class="slide first">
+  <img src="/img/ricknmorty.jpg" id="firstClone" alt="radio1">
+</div>
+<div class="slide">
+  <img src="/img/halo1.jpg" alt="radio2">
+</div>
+<div class="slide">
+  <img src="/img/dbgt2.jpg" alt="radio3">
+</div>
+<div class="slide">
+  <img src="/img/rez1.jpg" alt="radio4">
+</div>
+<div class="slide">
+  <img src="/img/megaman.jpg" id="lastClone" alt="radio5">
+</div>
+  <div class="navigation-auto">
+    <div class="auto-btn"></div>
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+  </div>
+</div>
+        
+              <!-----------image buttons end------------------>
+              <!----------------slide image start-------------->
 
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
 
+              </div>
             </div>
 
-          <button id="prevBtn">Prev</button>
-          <button id="nextBtn">Next</button>
+            </div>
+</div>
+       <!-------------image slider end----------->
+       <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked =true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }   
+      }, 5000);
+      </script>
 
 
-          <script src="/scripts/scripts.js"></script>
-          </div>
-          
-        </div>
-        </div>
-    </body>
+     </div>
+   </div>  
+
 </html>
