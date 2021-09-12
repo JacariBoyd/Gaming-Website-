@@ -56,7 +56,7 @@ h1 {
 
 .side-bar .menu .item a:hover {
   background: #8621f8;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .side-bar .menu .item i {
@@ -116,10 +116,11 @@ h1 {
 /*css manual slide navigation*/
 .navigation-manual {
   position: absolute;
-  width: 800px;
-  margin-top: 200px;
   display: flex;
+  width: 800px;
   justify-content: center;
+  margin-top: -0px;
+  right: 50px;
 }
 
 .manual-btn {
@@ -127,7 +128,7 @@ h1 {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: 2s;
 }
 
 .manual-btn:not(:last-child) {
@@ -161,14 +162,15 @@ h1 {
   display: flex;
   width: 800px;
   justify-content: center;
-  margin-top: 460px;
+  margin-top: 300px;
+  right: 50px;
 }
 
 .navigation-auto div {
-  border: 2px soild#40D3DC;
+  border: 2px solid #40d3dc;
   padding: 5px;
   border-radius: 10px;
-  transition: 1s;
+  transition: 2s;
 }
 
 .navigation-auto div:not(:last-child) {
