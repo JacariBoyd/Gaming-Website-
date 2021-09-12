@@ -1,11 +1,16 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100:200:300;400;500;600;&display=swap");
+
+* {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/dbgt.jpg);
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-size: cover;
+  min-height: 800vh;
+  background: url(../img/dbgt.jpg);
+  background-position: center;
 }
 h1 {
   margin: 0;
@@ -13,7 +18,73 @@ h1 {
   color: #00539f;
   text-shadow: 3px 3px 1px rgb(82, 34, 2);
 }
+.side-bar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+}
 
+.side-bar.active {
+  left: 0;
+}
+.side-bar .menu {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item a {
+  color: #fff;
+  background: #8621f8;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+  background: #8621f8;
+  transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+  margin-right: 15 px;
+}
+
+.side-bar .menu .item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.menu-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin: 25px;
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+}
 .slider {
   width: 300px;
   height: 500px;
@@ -45,9 +116,8 @@ h1 {
 /*css manual slide navigation*/
 .navigation-manual {
   position: absolute;
-  width: 2000px;
+  width: 800px;
   margin-top: 200px;
-  height: 0px;
   display: flex;
   justify-content: center;
 }
@@ -64,7 +134,7 @@ h1 {
   margin-right: 40px;
 }
 
-.manual-btn-hover {
+.manual-btn:hover {
   background: rgb(122, 123, 206);
 }
 

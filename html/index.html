@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="/scripts/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <title>teamlab</title>
    
 </head>
@@ -14,7 +16,28 @@
 <body>
 <h1>Gamer Raven</h1>
 <h2>test Slides</h2>
-         
+<div class= "menu-btn">
+  <i class="fas fa-bars"></i>
+</div>
+   <div class="side-bar">
+     <div class="close-btn">
+       <i class="fas fa-times"></i>
+     </div>
+     <div class="menu">
+    <div class="item"><a href="#"><i class="fas fa-desktop"></i>DashBoard</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-table"></i>Home<i class="fas fa-angle-right dropdown">
+          </i></a>
+        </div>
+          <div class="item"><a href="#"><i class="fas fa-th"></i>About</a></div>
+     <div class="item"><a href="#"><i class="fas fa-cogs"></i>Contact</a>
+    </div>
+     <div class="item"><a href="#"><i class="fas fa-desktop">Settings</i></a>
+    </div>
+     <div class="item"><a href="#"><i class="fas fa-info-circle"></i>DashBoard</a>
+    </div>
+    </div>
+  </div>      
           <!-- <div class="slider"> -->
             <div class="slides">
            
@@ -76,7 +99,21 @@
           counter = 1;
         }   
       }, 5000);
+
+
+
+      $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+       $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+      
       </script>
+<!-------------------Jquery for expand and collapse the sidebar-------->
 
 
           
