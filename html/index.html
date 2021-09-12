@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="/scripts/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script
 
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="/scripts/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-
-
-   
 
     <title>teamlab</title>
    
@@ -21,7 +20,7 @@
 <body>
 <h1>Gamer Raven</h1>
 <h2>test Slides</h2>
-  
+
 <div class= "menu-btn">
   <i class="fas fa-bars"></i>
 </div>
@@ -45,8 +44,6 @@
     </div>
   </div>      
 
-         
-          <!-- <div class="slider"> -->
             <div class="slides">
            
               <!---radio buttons start-->
@@ -56,6 +53,41 @@
 <input type="radio" name="radio-btn" id="radio4"> 
 <input type="radio" name="radio-btn" id="radio5"> 
               
+
+
+<div class="slide first">
+  <img src="/img/ricknmorty.jpg" id="firstClone" alt="radio1">
+</div>
+<div class="slide">
+  <img src="/img/halo1.jpg" alt="radio2">
+</div>
+<div class="slide">
+  <img src="/img/dbgt2.jpg" alt="radio3">
+</div>
+<div class="slide">
+  <img src="/img/rez1.jpg" alt="radio4">
+</div>
+<div class="slide">
+  <img src="/img/megaman.jpg" id="lastClone" alt="radio5">
+</div>
+  <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+  </div>
+</div>
+        
+              <!-----------image buttons end------------------>
+              <!----------------slide image start-------------->
+
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
 
 <div class="slide first">
   <img src="/img/ricknmorty.jpg" id="firstClone" alt="radio1">
@@ -98,7 +130,7 @@
             </div>
 </div>
        <!-------------image slider end----------->
-       <script type="text/javascript">
+<script type="text/javascript">
       var counter = 1;
       setInterval(function(){
         document.getElementById('radio' + counter).checked =true;
@@ -107,16 +139,32 @@
           counter = 1;
         }   
       }, 5000);
+
 </script>
 
 
 
-      <script>
+      <script type="text/javscript">
+      
       $('.menu-btn').click(function(){
         $('.side-bar').addClass('active');
         $
       });
 
+       $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+      });
+      
+      </script>
+<!-------------------Jquery for expand and collapse the sidebar-------->
+      <scrip type =""text/javascript>
+
+      $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $
+      });
+  </script>
+   <script>
        $('.close-btn').click(function(){
         $('.side-bar').removeClass('active');
       });
@@ -131,8 +179,7 @@
         </div>
         </div>
     </body>
-=======
-      </script>
+
 
 
      </div>
