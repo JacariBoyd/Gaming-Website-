@@ -1,10 +1,27 @@
+
+
 @import url(//fonts.googleapis.com/earlyaccess/notosanscham.css);
+
+
+ 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/dbgt.jpg);
+}
+
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
 }
 body {
   background-size: cover;
@@ -12,6 +29,7 @@ body {
   background: url(../img/dbgt.jpg);
   background-position: center;
 }
+
 h1 {
   margin: 0;
   padding: 20px 0;
@@ -38,6 +56,92 @@ h1 {
   width: 100%;
   margin-top: 80px;
 }
+
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item a {
+  color: #fff;
+  background: #8621f8;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+  background: #8621f8;
+  transition: 0.2s ease;
+}
+
+.slides {
+  width: 300%;
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 15%;
+  transition: 5s;
+}
+
+.slide img {
+  width: 300px;
+  height: 300px;
+}
+
+/*css manual slide navigation*/
+.navigation-manual {
+  position: absolute;
+  width: 2000px;
+  margin-top: 200px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #4eb8c2;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn-hover {
+  background: rgb(122, 123, 206);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-right: -0%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -0%;
+}
+
 
 .side-bar .menu .item {
   position: relative;
@@ -100,12 +204,7 @@ h1 {
 .slide {
   width: 15%;
   transition: 5s;
-}
 
-.slide img {
-  width: 300px;
-  height: 300px;
-}
 
 /*css manual slide navigation*/
 .navigation-manual {
@@ -148,7 +247,66 @@ h1 {
 
 #radio5:checked ~ .first {
   margin-left: 0%;
+
 }
+/* css for automatic navigation;*/
+
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+
+.slide img {
+  width: 300px;
+  height: 300px;
+}
+
+/*css manual slide navigation*/
+.navigation-manual {
+  position: absolute;
+
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: -0px;
+  right: 50px;
+}
+
+.manual-btn {
+  border: 2px solid #4eb8c2;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: rgb(122, 123, 206);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-right: -0%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -0%;
+}
+ 
 /* css for automatic navigation;*/
 
 .navigation-auto {
@@ -165,6 +323,10 @@ h1 {
   padding: 5px;
   border-radius: 10px;
   transition: 2s;
+   master
+
+
+
 }
 
 .navigation-auto div:not(:last-child) {
