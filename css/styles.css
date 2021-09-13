@@ -85,12 +85,6 @@ h1 {
   margin: 25px;
   cursor: pointer;
 }
-.slider {
-  width: 300px;
-  height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-}
 
 .slides {
   width: 300%;
@@ -140,20 +134,20 @@ h1 {
 }
 
 #radio1:checked ~ .first {
-  margin-left: 0;
+  margin-left: 0%;
 }
 #radio2:checked ~ .first {
   margin-left: -20%;
 }
 #radio3:checked ~ .first {
-  margin-right: -0%;
+  margin-right: -40%;
 }
 #radio4:checked ~ .first {
   margin-left: -60%;
 }
 
 #radio5:checked ~ .first {
-  margin-left: -0%;
+  margin-left: 0%;
 }
 /* css for automatic navigation;*/
 
